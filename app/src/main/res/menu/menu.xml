@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item android:id="@+id/image"
+            android:title="Image Recognition"
+            android:icon="@drawable/text_scan"/>
+        <item android:id="@+id/ocr"
+            android:title="OCR Recognition"
+            android:icon="@drawable/ocr_scan"/>
+        <item android:id="@+id/language"
+            android:title="Language Translation"
+            android:icon="@drawable/lang_translation"/>
+        <item android:id="@+id/qr_code"
+            android:title="QR Scanner"
+            android:icon="@drawable/qr_code"/>
+    </group>
+
+</menu>
