@@ -18,20 +18,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView_textreco"
+        <ScrollView
+            android:id="@+id/textView_textreco_scrollview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:gravity="center_horizontal"
-            android:hint="Scanned Text will be Displayed here."
-            android:padding="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_margin="10dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageview_textreco" />
+            app:layout_constraintTop_toBottomOf="@+id/imageview_textreco">
+
+            <TextView
+                android:id="@+id/textView_textreco"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_horizontal"
+                android:hint="Scanned Text will be Displayed here." />
+
+        </ScrollView>
 
         <Button
             android:id="@+id/button"

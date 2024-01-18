@@ -47,6 +47,7 @@ import com.google.mlkit.vision.text.latin.TextRecognizerOptions
     ): View? {
         // Inflate the layout for this fragment
 
+
         binding = DataBindingUtil.inflate(inflater , R.layout.fragment_text_recognition , container , false)
 
         imageView = binding.imageviewTextreco
@@ -101,7 +102,7 @@ import com.google.mlkit.vision.text.latin.TextRecognizerOptions
         }
     }
 
-    private fun DetectImage(){
+    private fun DetectImage(){0
         if(imageBitmap != null){
             var image : InputImage? = imageBitmap?.let { InputImage.fromBitmap(it,0) }
             var recognizer : TextRecognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS)
@@ -123,6 +124,7 @@ import com.google.mlkit.vision.text.latin.TextRecognizerOptions
                             for(element in line.elements){
                                 var elementText: String = element.text
                                 resultbuilder.append(elementText)
+                                resultbuilder.append("\n")
                             }
 
                             //Displaying the result
