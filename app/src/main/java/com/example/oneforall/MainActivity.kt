@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        supportActionBar?.setDefaultDisplayHomeAsUpEnabled(true)
+
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         loadFragment(TextRecognition())
 

@@ -124,10 +124,10 @@ import com.google.mlkit.vision.text.latin.TextRecognizerOptions
                             for(element in line.elements){
                                 var elementText: String = element.text
                                 resultbuilder.append(elementText)
-                                resultbuilder.append("\n")
                             }
 
                             //Displaying the result
+                            resultbuilder.append("\n")
                             textView.setText(resultbuilder)
                         }
                     }

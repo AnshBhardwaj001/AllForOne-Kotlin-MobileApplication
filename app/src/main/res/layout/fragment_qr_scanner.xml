@@ -15,11 +15,9 @@
             <com.google.android.material.appbar.CollapsingToolbarLayout
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                app:layout_scrollFlags="scroll"
-                app:contentScrim="@color/primary">
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
                 <ImageView
-
                     android:layout_width="250dp"
                     android:layout_height="250dp"
                     android:layout_margin="20dp"
@@ -29,24 +27,7 @@
 
                 <androidx.appcompat.widget.Toolbar
                     android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <ImageView
-                            android:layout_width="?attr/actionBarSize"
-                            android:layout_height="?attr/actionBarSize"
-                            android:src="@drawable/ic_launcher_background"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.468"
-                            app:layout_constraintStart_toStartOf="parent"
-                            tools:layout_editor_absoluteY="0dp" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </androidx.appcompat.widget.Toolbar>
+                    android:layout_height="?attr/actionBarSize"/>
 
             </com.google.android.material.appbar.CollapsingToolbarLayout>
 
